@@ -1,0 +1,4 @@
+pytest
+riposte
+structlog
+python-telegram-bot
