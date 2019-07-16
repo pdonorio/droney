@@ -1,11 +1,9 @@
-
 from abc import ABC, abstractmethod
 from typing import Callable, Optional, TypeVar
 
 
 class Bot(ABC):
-
-    def __init__(self, name: str, mode: Optional[str]=None):
+    def __init__(self, name: str, mode: Optional[str] = None):
         # super(Bot, self).__init__()
         self.name = name
         self.mode = mode

@@ -1,4 +1,3 @@
-
 from droney import app
 from droney.bot.cli import Cli  # noqa
 

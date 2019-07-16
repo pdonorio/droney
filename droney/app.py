@@ -1,11 +1,10 @@
-
 import typing
 import importlib
 from . import DEFAULT_TYPE, ALLOWED_TYPES
 from .bot import Btype
 
 
-def new(name: str, mode: typing.Optional[str]=None) -> Btype:
+def new(name: str, mode: typing.Optional[str] = None) -> Btype:
 
     if mode is None:
         mode = DEFAULT_TYPE

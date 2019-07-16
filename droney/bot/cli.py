@@ -1,11 +1,9 @@
-
 from . import Bot
 from typing import Callable
 from riposte import Riposte
 
 
 class Cli(Bot):
-
     def setup(self) -> Riposte:
         self.app = Riposte(prompt=f"{self.name}:~$ ")
         return self.app
