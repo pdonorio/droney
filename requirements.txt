@@ -1,4 +1,5 @@
+mypy
 pytest
-riposte
 structlog
+riposte
 python-telegram-bot

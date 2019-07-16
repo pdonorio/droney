@@ -1,0 +1,3 @@
+
+DEFAULT_TYPE = 'cli'
+ALLOWED_TYPES = [DEFAULT_TYPE, 'telegram']

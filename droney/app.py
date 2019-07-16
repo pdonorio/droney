@@ -1,11 +1,19 @@
 
+import typing
 import importlib
+from . import DEFAULT_TYPE, ALLOWED_TYPES
+from .bot import Btype
 
 
-def new(name, mode=None):
+def new(name: str, mode: typing.Optional[str]=None) -> Btype:
+
     if mode is None:
-        mode = 'cli'
-    print("new", name, mode)
+        mode = DEFAULT_TYPE
+
+    if mode not in ALLOWED_TYPES:
+        raise AttributeError(f"Invalid mode: {mode}")
+    else:
+        print("new", name, mode)
 
     module = importlib.import_module(f'droney.bot.{mode}')
     MyClass = getattr(module, mode.capitalize())
